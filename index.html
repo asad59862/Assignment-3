@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- tailwind configeration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'newcolor':'#179800',
+            'cardcolor':'#EFEBE3'
+          }
+        }
+      }
+    }
+  </script>
+  <!-- daisyui cdn link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font woasame cdn link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  
+</head>
+<body>
+ <!-- header section -->
+<header class="container mx-auto">
+<!-- nav bar -->
+<div class="navbar bg-base-100">
+  <div class="navbar-star  flex justify-end">
+   
+    <a class="btn btn-ghost text-xl">daisyUI</a>
+
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        <li><a>Item 1</a></li>
+        <li><a>Item 3</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><a>Item 1</a></li>
+      <li>
+        <details>
+          <summary>Parent</summary>
+          <ul class="p-2">
+            <li><a>Submenu 1</a></li>
+            <li><a>Submenu 2</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a>Item 3</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a class="btn  sm:block">Button</a>
+  </div>
+</div>
+</header>
+
+ <!-- main section -->
+
+ <main class="">
+  <div class="hero bg-base-200 min-h-screen gap-2">
+    <div class="hero-content text-center">
+      <div class="max-w-md">
+        <h1 class="text-5xl font-bold">Freshness <span class="text-green-600">You Can
+          Count</span> On, Prices You’ll Love!</h1>
+        <p class="py-6">
+          Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
+        </p>
+        <img src="./c2-assets/hero-vegetables.png" alt="">
+      </div>
+      
+    </div>
+  </div>
+  <!-- services card -->
+  <h3 class=" container px-12 py-7 gap-4 text-3xl font-semibold text-green-600 ">Services</h3>
+  
+   <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+    
+    <div class="my-4 mx-4 ">
+      <div class="card bg-red-100 w-96 shadow-xl">
+        <figure>
+          <div class="bg-white w-40 h-40 rounded-full flex justify-center items-center my-4"> <img
+          src="./c2-assets/service.png"
+          alt="service" 
+          class="" /></div>
+         
+        </figure>
+        <div class="card-body text-center">
+          <h2 class="font-bold ">24/7 Services !</h2>
+          <p class="">Our dedicated team is available around the clock to provide you with top-notch service, no matter the time. Whether it’s an emergency, a quick fix, or ongoing support, we’re here for you 24/7. Trust us to be by your side whenever you need assistance</p>
+          
+        </div>
+      </div>
+    
+     </div>
+
+     <div class="my-4 mx-4">
+      <div class="card bg-red-100 w-96 shadow-xl">
+        <figure>
+          <div class="bg-white w-40 h-40 rounded-full flex justify-center items-center my-4"><img
+            src="./c2-assets/delivery.png"
+            alt="delivery"   /></div>
+          
+        </figure>
+        <div class="card-body text-center">
+          <h2 class="font-bold  ">Fast Delivery</h2>
+          <p class=" space-y-2">Fast delivery refers to the quick and efficient transportation of goods from the seller to the buyer. It focuses on minimizing the time between order placement and receipt, often using expedited shipping methods or local fulfillment centers.</p>
+          
+        </div>
+      </div>
+    
+     </div>
+
+     <div class="my-4 mx-4 rounded-lg">
+      <div class="card bg-red-100 w-96 shadow-xl">
+        <figure>
+          <div class="bg-white w-40 h-40 rounded-full flex justify-center items-center my-4"><img
+            src="./c2-assets/healthy.png"
+            alt="service"  /></div>
+          
+        </figure>
+        <div class="card-body text-center">
+          <h2 class="font-bold ">Healthy Products </h2>
+          <p class="">Our dedicated team is available around the clock to provide you with top-notch service, no matter the time. Whether it’s an emergency, a quick fix, or ongoing support, we’re here for you 24/7. Trust us to be by your side whenever you need assistance</p>
+          
+        </div>
+      </div>
+    
+     </div>
+
+   </div>
+   
+
+ </main>
+  <!-- footer section -->
+</body>
